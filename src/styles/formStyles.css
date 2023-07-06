@@ -1,0 +1,156 @@
+.seccion-derecha {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+}
+.seccion-der-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px 0;
+  gap: 50px;
+  
+}
+.seccion-der-b {
+  display: flex;
+  align-items: center;
+  padding-right: 10vh;
+  height: 100vh;
+}
+.img-container {
+  position: relative;
+  &&::before {
+    position: absolute;
+    content: "Registra tus productos y facilita tus ventas";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #9276e0a6;
+    font-size: 45px;
+    padding: 20px 0px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.imagen-formulario {
+  height: 90vh;
+  width: 50vh;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: -2px -2px 30px rgb(163, 163, 163);
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  grid-template-areas:
+    "nombre nombre nombre nombre codigoBarra codigoBarra"
+    "medida medida categoria categoria cantidad cantidad"
+    "costoUnidad costoUnidad costoUnidad precioVenta precioVenta precioVenta"
+    "boton  boton  . mensaje mensaje mensaje  ";
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #aeaeae;
+  padding: 50px;
+  margin: 0 50px;
+  column-gap: 10px;
+  row-gap: 30px;
+  color: var(--primary_color);
+}
+.h1-titulo {
+  width: 700px;
+  font-weight: normal;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+.input {
+  border: #9276e0 solid 1px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+.nombre {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  grid-area: nombre;
+}
+.codigoBarra {
+  display: flex;
+  flex-direction: column;
+  grid-area: codigoBarra;
+}
+.medida {
+  display: flex;
+  flex-direction: column;
+  grid-area: medida;
+}
+.categoria {
+  display: flex;
+  flex-direction: column;
+  grid-area: categoria;
+}
+.cantidad {
+  display: flex;
+  flex-direction: column;
+  grid-area: cantidad;
+}
+.costoUnidad {
+  display: flex;
+  flex-direction: column;
+  grid-area: costoUnidad;
+}
+.precioVenta {
+  display: flex;
+  flex-direction: column;
+  grid-area: precioVenta;
+}
+.button {
+  width: 200px;
+  cursor: pointer;
+  grid-area: boton;
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px #9376e0;
+  border-radius: 5px;
+  background-color: #9376e0;
+  color: whitesmoke;
+  &&:hover {
+    opacity: 0.9;
+  }
+  &&:active {
+    transform: translateY(2px);
+  }
+}
+.mensaje {
+  grid-area: mensaje;
+  text-align: center;
+}
+.mensaje-producto-creado {
+  color: #4bb543;
+}
+.input-label {
+  display: flex;
+  gap: 10px;
+}
+.select-box {
+  border: thin solid #9376e0;
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  width: 150px;
+}
+.opcion-input {
+  appearance: none !important;
+  color: #333;
+  border: thin solid #9376e0;
+}
+.error-crear-producto {
+  color: tomato;
+}

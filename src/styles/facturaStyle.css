@@ -1,0 +1,54 @@
+.form-factura-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #adadad;
+  border: thin solid #242424;
+  border-radius: 8px;
+  row-gap: 50px;
+  column-gap: 50px;
+  padding: 30px;
+}
+.label-fecha {
+  border-radius: 8px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 25px;
+  gap: 10px;
+  border: thin solid #242424;
+}
+.input-fecha {
+  padding: 0;
+  font-size: 25px;
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+.label-producto {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 25px;
+  gap: 10px;
+  width: 40%;
+  border: thin solid #242424;
+  border-radius: 8px;
+  text-align: center;
+}
+.input-producto {
+  text-align: center;
+  font-size: 25px;
+  width: 300px;
+  border: none;
+  padding: 0px;
+  &&:target {
+    outline: none;
+  }
+}
+.boton-form-factura {
+  height: 50px;
+  width: 150px;
+}

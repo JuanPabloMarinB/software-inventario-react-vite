@@ -1,0 +1,75 @@
+aside {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 100vh;
+  box-shadow: 2px 0px 5px#b8b8b8;
+}
+.logo {
+  width: 180px;
+  object-fit: cover;
+  align-self: center;
+  margin-left: -20px;
+}
+h3 {
+  font-size: 15px;
+  margin-left: 3vh;
+  font-weight: normal;
+  color: rgb(69, 69, 69);
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  font-size: 20px;
+  padding: 0;
+}
+.icono {
+  color: #865dff;
+  font-size: 25px;
+}
+.icono-nav-menu {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #8f43ee;
+}
+.link {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-left: 20px;
+}
+.icono-nav-menu:hover {
+  box-shadow: inset 250px 0px 0px #9276e0c6;
+  transition: all 0.3s ease;
+}
+.icono-nav-menu:hover span,
+.icono-nav-menu:hover .icono {
+  color: #fff;
+}
+/* Estilo de los enlaces cuando se hace clic */
+.active {
+  background-color: #9376e0;
+  text-decoration: none;
+  border-left: 10px solid #242424;
+  &&:hover {
+    background-color: #9376e0;
+  }
+  && span,
+  .icono {
+    color: #fff;
+  }
+}
+.rojo{
+  color: red;
+  font-size: 50px;
+}
+.rojo{
+  color: green;
+}
