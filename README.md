@@ -1,0 +1,1 @@
+# software-inventario-react-vite
