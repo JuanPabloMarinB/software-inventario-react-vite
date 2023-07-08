@@ -1,6 +1,7 @@
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { BiPencil, BiTrash } from "react-icons/bi";
-import { API, API_DEV } from "../utils/api";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { API, API_DEV, eliminarProducto, obtenerProductos } from "../utils/api";
 import imagenPapa from "../images/Papa.png";
 import imagenZanahoria from "../images/Zanahoria.webp";
 import imagenTomates from "../images/Tomates.png";
@@ -14,7 +15,43 @@ import { fetchData } from "../hooks/useFetch";
 const apiData = fetchData(API + "/producto");
 
 export default function ProductosDeTabla() {
+  const [isDisabled, setIsDisabled] = useState(true);
   const data = apiData.read();
+
+  useEffect(() => {
+    obtenerProductos()
+      .then((productos) => {
+        if (Array.isArray(productos)) {
+          console.log("hola mundo");
+        } else {
+          console.error("Los datos obtenidos no son un array:", productos);
+        }
+      })
+      .catch((errorProductos) => {
+        console.error("Error al obtener los productos:", errorProductos);
+      });
+  }, []);
+
+  const handleDeleteButtonClick = async (id) => {
+    eliminarProducto(id);
+  };
+
+  const handleEditButtonClick = async (productoId, nuevoNombre) => {
+    try {
+      // Realizar la llamada a la API para guardar el nuevo nombre del producto en la base de datos
+      await API.put(`/producto/${productoId}`, { nombre: nuevoNombre });
+
+      // Deshabilitar el input después de guardar los datos
+      setIsDisabled(true);
+    } catch (error) {
+      // Manejar el error en caso de que la llamada a la API falle
+      console.error(error);
+    }
+  };
+
+  const cambiarDisabled = () => {
+    setIsDisabled(!isDisabled);
+  };
 
   return (
     <>
@@ -47,26 +84,49 @@ export default function ProductosDeTabla() {
               </a>
             </td>
             <td>
-              <a href={"/producto/" + producto.id} className="nombre-producto">
-                {producto.nombre}
-              </a>
+              <input
+                type="text"
+                disabled={isDisabled}
+                defaultValue={producto.nombre}
+                className="input-nombre-producto"
+              />
             </td>
+            <td>$ {producto.costoXunidad}</td>
             <td>$ {producto.precioVenta}</td>
             <td>{producto.cantidadActual}</td>
-            <td>{moment(producto.fechaIngreso).format("DD/MM/YYYY HH:mm") + " hrs"}</td>
+            <td>
+              {moment(producto.fechaIngreso).format("DD/MM/YYYY HH:mm") +
+                " hrs"}
+            </td>
             <td>
               <span>{producto.activo ? "✅ Sí" : "🔴 No"}</span>
             </td>
-            <td>
-              <a href={"/editar/producto/" + producto.id} className="btn_edit">
-                <BiPencil />
-              </a>
-              <a
-                href={"/eliminar/producto/" + producto.id}
+            <td className="acciones-columna">
+              {isDisabled ? (
+                <a onClick={cambiarDisabled} className="btn_edit">
+                  <BiPencil />
+                </a>
+              ) : (
+                <a
+                  onClick={() =>
+                    handleEditButtonClick(
+                      producto.id,
+                      document.querySelector(
+                        `.input-nombre-producto[data-producto-id="${producto.id}"]`
+                      ).value
+                    )
+                  }
+                  className="btn_save"
+                >
+                  <AiFillCheckCircle />
+                </a>
+              )}
+              <button
+                onClick={() => handleDeleteButtonClick(producto.id)}
                 className="btn_delete"
               >
                 <BiTrash />
-              </a>
+              </button>
             </td>
           </tr>
         ))}

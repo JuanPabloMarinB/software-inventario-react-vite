@@ -93,7 +93,8 @@ const CrearProductoForm = () => {
         <label className="input-label nombre">
           Nombre
           <input
-            className="input "
+            className="input nombre-producto"
+            placeholder="Ingresa el nombre del producto"
             type="text"
             value={nombre}
             required
@@ -157,7 +158,7 @@ const CrearProductoForm = () => {
           <input
             className="input "
             type="number"
-            min={0}
+            min={1}
             required
             value={cantidadIngresada}
             onChange={(e) => setCantidadIngresada(e.target.value)}
@@ -169,7 +170,7 @@ const CrearProductoForm = () => {
           <input
             className="input "
             type="number"
-            min={0}
+            min={1}
             required
             value={costoXunidad}
             onChange={(e) => setCostoXunidad(e.target.value)}
@@ -181,7 +182,7 @@ const CrearProductoForm = () => {
           <input
             className="input "
             type="number"
-            min={0}
+            min={1}
             required
             value={precioVenta}
             onChange={(e) => setPrecioVenta(e.target.value)}

@@ -12,11 +12,12 @@ const TablaProductos = () => {
       </div>
       <div className="table-container">
         <table>
-          <thead>
+          <thead className="head-table-ver-productos">
             <tr>
               <th className="imagen-columna">Imagen</th>
-              <th>Producto</th>
-              <th>Precio</th>
+              <th>Nombre de Producto</th>
+              <th>Precio de Compra</th>
+              <th>Precio de Venta</th>
               <th>Cantidad</th>
               <th>Fecha de Registro</th>
               <th>En Stock</th>

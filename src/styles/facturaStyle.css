@@ -1,14 +1,75 @@
+.container-form-factura {
+  display: flex;
+  justify-content: space-evenly;
+}
+.seccion-izq-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px 30px 50px;
+}
 .form-factura-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #adadad;
+  background-color: #ffffff;
   border: thin solid #242424;
   border-radius: 8px;
-  row-gap: 50px;
-  column-gap: 50px;
-  padding: 30px;
+  margin: 10px;
+  padding: 20px 10px;
 }
+.cantidad-producto-form-factura {
+  display: flex;
+  height: inherit;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+td {
+  color: #242424;
+}
+.head-form-prod-factura {
+  background-color: #242424;
+  font-size: large;
+}
+.seccion-der-form {
+  display: flex;
+  width: 400px;
+  align-items: center;
+}
+.factura-container {
+  background-color: #242424;
+  border-radius: 10px;
+  padding: 0 30px;
+  color: #fff;
+}
+.total-compra-container {
+  box-shadow: 0px 0px 10px #242424;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.head-regitrar-compra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-producto {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.input-search-producto {
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  width: 200px;
+  &&::placeholder {
+    color: #888888;
+  }
+}
+
 .label-fecha {
   border-radius: 8px;
 }
@@ -51,4 +112,20 @@
 .boton-form-factura {
   height: 50px;
   width: 150px;
+}
+.resultados-busqueda {
+  position: absolute;
+}
+.li-resultados-productos {
+  display: flex;
+  z-index: 10;
+  width: 210px;
+  color: #242424;
+  padding: 6px 10px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  &&:hover{
+    background-color: #242424;
+    color: #fff;
+  }
 }
