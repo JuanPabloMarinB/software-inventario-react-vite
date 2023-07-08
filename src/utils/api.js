@@ -40,7 +40,7 @@ export async function eliminarProducto(id) {
 }
 
 
-export const API = "https://apifruver.circuitosinteligentes.com/";
+export const API = "https://apifruver.circuitosinteligentes.com";
 
 export const API_DEV = "http://localhost:3000";
 

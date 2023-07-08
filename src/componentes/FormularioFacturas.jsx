@@ -32,7 +32,7 @@ export default function FormularioFacturas() {
         cantidadVenta: productosComprados.map((producto) => producto.cantidad),
       };
 
-      const response = await fetch(API_DEV + "/venta/registro-venta", {
+      const response = await fetch(API + "/venta/registro-venta", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
