@@ -92,14 +92,11 @@ tr:nth-child(odd) {
   background-color: #e9e9e9;
   border-radius: 8px;
   padding: 8px 0;
-  width: 70%;
+  width: 200px;
 }
 th,
 td {
   text-align: center;
-}
-.acciones-columna {
-  padding-right: 20px;
 }
 .titulo-productos {
   font-size: 40px;
@@ -109,12 +106,13 @@ td {
   padding-left: 20px;
 }
 img {
-  width: 100%;
   height: 50px;
+  vertical-align: middle;
   object-fit: contain;
   color: #2d2727;
 }
 .btn_delete,
+.btn_save,
 .btn_edit {
   text-decoration: none;
   border: none;
@@ -122,4 +120,7 @@ img {
   cursor: pointer;
   font-size: 20px;
   padding: 0 8px;
+  &&:hover{
+    opacity: 0.3;
+  }
 }

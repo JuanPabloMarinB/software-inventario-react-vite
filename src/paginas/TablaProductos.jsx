@@ -21,7 +21,7 @@ const TablaProductos = () => {
               <th>Cantidad</th>
               <th>Fecha de Registro</th>
               <th>En Stock</th>
-              <th className="acciones-columna">Acciones</th>
+              <th className="th-acciones-columna">Acciones</th>
             </tr>
           </thead>
           <tbody>

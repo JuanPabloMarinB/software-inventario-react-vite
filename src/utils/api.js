@@ -3,7 +3,7 @@ import "moment/locale/es";
 
 export async function obtenerProductos() {
   try {
-    const response = await fetch(API + "/producto");
+    const response = await fetch(API_DEV + "/producto");
     const productosObtenidos = await response.json();
     return productosObtenidos;
   } catch (error) {
@@ -11,19 +11,19 @@ export async function obtenerProductos() {
   }
 }
 export async function obtenerEnums(tipoDeEnum) {
-  const response = await fetch(`${API}/enums/${tipoDeEnum}`);
+  const response = await fetch(`${API_DEV}/enums/${tipoDeEnum}`);
   const enumsObtenidos = await response.json();
   return enumsObtenidos;
 }
 export async function obtenerVentas() {
-  const response = await fetch(`${API}/venta`);
+  const response = await fetch(`${API_DEV}/venta`);
   const ventasObtenidas = await response.json();
   return ventasObtenidas;
 }
 
 export async function eliminarProducto(id) {
   try {
-    const response = await fetch(`${API}/producto/${id}`, {
+    const response = await fetch(`${API_DEV}/producto/${id}`, {
       method: 'DELETE',
     });
 

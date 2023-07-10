@@ -2,19 +2,26 @@ import { useState, useEffect, useCallback } from "react";
 import "../styles/facturaStyle.css";
 import { obtenerProductos } from "../utils/api";
 
-const filtrarProductos = (query, items) => {
-  if (!query) {
-    return [];
-  }
-  return items.filter((producto) =>
-    producto.nombre.toLowerCase().includes(query.toLowerCase())
-  );
-};
-
-export default function BuscarProductoFactura({ actualizarProductos }) {
+export default function BuscarProductoFactura({
+  actualizarProductos,
+  resultados,
+  productosSeleccionados,
+}) {
   const [query, setQuery] = useState("");
   const [productos, setProductos] = useState([]);
-  const [resultados, setResultados] = useState([]);
+  const [resultadosFiltrados, setResultadosFiltrados] = useState([]);
+
+  const filtrarProductos = (query, items) => {
+    if (!query) {
+      return [];
+    }
+    return items.filter(
+      (producto) =>
+        producto.nombre.toLowerCase().includes(query.toLowerCase()) &&
+        !resultados.includes(producto) &&
+        !productosSeleccionados.some((p) => p.id === producto.id)
+    );
+  };
 
   useEffect(() => {
     obtenerProductos()
@@ -28,8 +35,8 @@ export default function BuscarProductoFactura({ actualizarProductos }) {
 
   useEffect(() => {
     const productosFiltrados = filtrarProductos(query, productos);
-    setResultados(productosFiltrados);
-  }, [query, productos]);
+    setResultadosFiltrados(productosFiltrados);
+  }, [query, productos, resultados, productosSeleccionados]);
 
   const handleInputChange = (e) => {
     setQuery(e.target.value);
@@ -39,7 +46,9 @@ export default function BuscarProductoFactura({ actualizarProductos }) {
     (producto) => {
       actualizarProductos(producto);
       setQuery("");
-      setResultados([]);
+      setResultadosFiltrados((prevResultados) =>
+        prevResultados.filter((p) => p.id !== producto.id)
+      );
     },
     [actualizarProductos]
   );
@@ -53,9 +62,9 @@ export default function BuscarProductoFactura({ actualizarProductos }) {
         value={query}
         onChange={handleInputChange}
       />
-      {resultados.length > 0 && (
+      {resultadosFiltrados.length > 0 && (
         <ul className="resultados-busqueda">
-          {resultados.map((producto) => (
+          {resultadosFiltrados.map((producto) => (
             <li
               className="li-resultados-productos"
               key={producto.id}

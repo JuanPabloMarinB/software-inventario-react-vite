@@ -12,19 +12,18 @@ import imagenCebollaCabezona from "../images/Cebolla-cabezona.png";
 import moment from "moment";
 import { fetchData } from "../hooks/useFetch";
 
-const apiData = fetchData(API + "/producto");
-
 export default function ProductosDeTabla() {
   const [isDisabled, setIsDisabled] = useState(true);
-  const data = apiData.read();
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     obtenerProductos()
-      .then((productos) => {
-        if (Array.isArray(productos)) {
-          console.log("hola mundo");
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setData([...data]);
+          console.log("Se ejecutó el useEffect");
         } else {
-          console.error("Los datos obtenidos no son un array:", productos);
+          console.error("Los datos obtenidos no son un array:", data);
         }
       })
       .catch((errorProductos) => {
@@ -39,7 +38,7 @@ export default function ProductosDeTabla() {
   const handleEditButtonClick = async (productoId, nuevoNombre) => {
     try {
       // Realizar la llamada a la API para guardar el nuevo nombre del producto en la base de datos
-      await API.put(`/producto/${productoId}`, { nombre: nuevoNombre });
+      await API_DEV.put(`/producto/${productoId}`, { nombre: nuevoNombre });
 
       // Deshabilitar el input después de guardar los datos
       setIsDisabled(true);
@@ -55,56 +54,55 @@ export default function ProductosDeTabla() {
 
   return (
     <>
-      <Suspense fallback={<div>Cargando...</div>}>
-        {data?.map((producto, index) => (
-          <tr key={index}>
-            <td>
-              <a href={"/producto/" + producto.id}>
-                {producto.nombre === "Papa" && (
-                  <img src={imagenPapa} alt="Imagen.png" />
-                )}
-                {producto.nombre === "Zanahoria" && (
-                  <img src={imagenZanahoria} alt="Imagen.png" />
-                )}
-                {producto.nombre === "Tomate" && (
-                  <img src={imagenTomates} alt="Imagen.png" />
-                )}
-                {producto.nombre === "Lechuga" && (
-                  <img src={imagenLechuga} alt="Imagen.png" />
-                )}
-                {producto.nombre === "Cilantro" && (
-                  <img src={imagenCilantro} alt="Imagen.png" />
-                )}
-                {producto.nombre === "Cebolla Larga" && (
-                  <img src={imagenCebollaLarga} alt="Imagen.png" />
-                )}
-                {producto.nombre === "Cebolla Cabezona" && (
-                  <img src={imagenCebollaCabezona} alt="Imagen.png" />
-                )}
-              </a>
-            </td>
-            <td>
-              <input
-                type="text"
-                disabled={isDisabled}
-                defaultValue={producto.nombre}
-                className="input-nombre-producto"
-              />
-            </td>
-            <td>$ {producto.costoXunidad}</td>
-            <td>$ {producto.precioVenta}</td>
-            <td>{producto.cantidadActual}</td>
-            <td>
-              {moment(producto.fechaIngreso).format("DD/MM/YYYY HH:mm") +
-                " hrs"}
-            </td>
-            <td>
-              <span>{producto.activo ? "✅ Sí" : "🔴 No"}</span>
-            </td>
-            <td className="acciones-columna">
+      {data?.map((producto, index) => (
+        <tr key={index}>
+          <td>
+            <a href={"/producto/" + producto.id}>
+              {producto.nombre === "Papa" && (
+                <img src={imagenPapa} alt="Imagen.png" />
+              )}
+              {producto.nombre === "Zanahoria" && (
+                <img src={imagenZanahoria} alt="Imagen.png" />
+              )}
+              {producto.nombre === "Tomate" && (
+                <img src={imagenTomates} alt="Imagen.png" />
+              )}
+              {producto.nombre === "Lechuga" && (
+                <img src={imagenLechuga} alt="Imagen.png" />
+              )}
+              {producto.nombre === "Cilantro" && (
+                <img src={imagenCilantro} alt="Imagen.png" />
+              )}
+              {producto.nombre === "Cebolla Larga" && (
+                <img src={imagenCebollaLarga} alt="Imagen.png" />
+              )}
+              {producto.nombre === "Cebolla Cabezona" && (
+                <img src={imagenCebollaCabezona} alt="Imagen.png" />
+              )}
+            </a>
+          </td>
+          <td>
+            <input
+              type="text"
+              disabled={isDisabled}
+              defaultValue={producto.nombre}
+              className="input-nombre-producto"
+            />
+          </td>
+          <td>$ {producto.costoXunidad}</td>
+          <td>$ {producto.precioVenta}</td>
+          <td>{producto.cantidadActual}</td>
+          <td>
+            {moment(producto.fechaIngreso).format("DD/MM/YYYY HH:mm") + " hrs"}
+          </td>
+          <td>
+            <span>{producto.activo ? "✅ Sí" : "🔴 No"}</span>
+          </td>
+          <td className="acciones-columna">
+            <div>
               {isDisabled ? (
                 <a onClick={cambiarDisabled} className="btn_edit">
-                  <BiPencil />
+                  <BiPencil /> Editar
                 </a>
               ) : (
                 <a
@@ -118,19 +116,19 @@ export default function ProductosDeTabla() {
                   }
                   className="btn_save"
                 >
-                  <AiFillCheckCircle />
+                  <AiFillCheckCircle /> Guardar
                 </a>
               )}
-              <button
-                onClick={() => handleDeleteButtonClick(producto.id)}
-                className="btn_delete"
-              >
-                <BiTrash />
-              </button>
-            </td>
-          </tr>
-        ))}
-      </Suspense>
+            </div>
+            <button
+              onClick={() => handleDeleteButtonClick(producto.id)}
+              className="btn_delete"
+            >
+              <BiTrash /> Borrar
+            </button>
+          </td>
+        </tr>
+      ))}
     </>
   );
 }

@@ -57,7 +57,7 @@ const CrearProductoForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(API + "/producto/crear", {
+      const response = await fetch(API_DEV + "/producto/crear", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

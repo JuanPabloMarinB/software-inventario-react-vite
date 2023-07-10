@@ -124,8 +124,29 @@ td {
   padding: 6px 10px;
   justify-content: center;
   background-color: rgb(255, 255, 255);
+  &&:hover {
+    background-color: #242424;
+    color: #fff;
+  }
+}
+.disminuir-cantidad-form-factura,
+.aumentar-cantidad-form-factura {
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #eee;
+  padding: 0px 8px;
+  width: 20px;
+  border-radius: 5px;
   &&:hover{
     background-color: #242424;
     color: #fff;
+  }
+}
+.eliminar-producto-form-factura {
+  font-size: 20px;
+  color: tomato;
+  cursor: pointer;
+  &&:hover {
+    opacity: 0.7;
   }
 }
