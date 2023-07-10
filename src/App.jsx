@@ -5,7 +5,6 @@ import "./styles/App.css";
 import Ajustes from "./paginas/Ajustes";
 import AgrearProducto from "./paginas/AgrearProducto";
 import FormularioFacturas from "./componentes/FormularioFacturas";
-import ComponentePadre from "./componentes/ComponentePadre";
 
 export default function App() {
   return (
@@ -18,7 +17,6 @@ export default function App() {
             <Route path="/ajustes" element={<Ajustes />} />
             <Route path="/agregar-productos" element={<AgrearProducto />} />
             <Route path="/facturador" element={<FormularioFacturas />} />
-            <Route path="/" element={<ComponentePadre />} />
           </Routes>
         </div>
       </div>
