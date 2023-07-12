@@ -5,7 +5,6 @@ import axios from "axios";
 
 export const API = "https://apifruver.circuitosinteligentes.com";
 
-export const API_DEV = "http://localhost:3000";
 
 export const CURRENT_DATE = moment().format("DD-MM-YY");
 

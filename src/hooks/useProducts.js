@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { API_DEV } from "../api/api";
+import { API } from "../api/api";
 
 export const api = axios.create({
-  baseURL: API_DEV + "/producto",
+  baseURL: API + "/producto",
 });
 
 const getProducts = async () => {
