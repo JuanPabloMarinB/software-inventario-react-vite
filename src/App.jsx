@@ -8,7 +8,7 @@ import FormularioFacturas from "./componentes/FormularioFacturas";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-container">
         <MenuLateral />
         <div className="main-content">
@@ -20,6 +20,6 @@ export default function App() {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

@@ -10,7 +10,7 @@ export const API_DEV = "http://localhost:3000";
 export const CURRENT_DATE = moment().format("DD-MM-YY");
 
 export const api = axios.create({
-  baseURL: API_DEV,
+  baseURL: API,
 });
 
 export const getProducts = async () => {
