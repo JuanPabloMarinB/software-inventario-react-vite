@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import "../styles/facturaStyle.css";
-import { obtenerProductos } from "../utils/api";
+import { obtenerProductos } from "../api/api";
 
 export default function BuscarProductoFactura({
   actualizarProductos,

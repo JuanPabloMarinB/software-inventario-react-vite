@@ -7,7 +7,11 @@ const TablaProductos = () => {
       <div className="head-table-container">
         <div className="input-search">
           <h1 className="titulo-productos">Productos</h1>
-          <input type="search" placeholder="Busca aquí" className="input-busqueda" />
+          <input
+            type="search"
+            placeholder="Busca aquí"
+            className="input-busqueda"
+          />
         </div>
       </div>
       <div className="table-container">

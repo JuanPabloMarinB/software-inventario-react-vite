@@ -111,6 +111,10 @@ img {
   object-fit: contain;
   color: #2d2727;
 }
+.acciones-columna{
+  display: flex;
+  flex-direction: column;
+}
 .btn_delete,
 .btn_save,
 .btn_edit {

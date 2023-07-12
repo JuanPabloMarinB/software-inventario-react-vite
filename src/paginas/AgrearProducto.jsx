@@ -1,12 +1,12 @@
 import React from "react";
-import CrearProductoForm from "../componentes/FormularioCrearProducto";
 import ImagenFormCrearProducto from "../componentes/ImagenFormCrearProducto";
+import FormularioCrearProducto from "../componentes/FormularioCrearProducto";
 
 export default function AgrearProducto() {
   return (
     <section className="seccion-derecha">
       <section className="seccion-der-a">
-        <CrearProductoForm />
+        <FormularioCrearProducto />
       </section>
       <section className="seccion-der-b">
         <ImagenFormCrearProducto />

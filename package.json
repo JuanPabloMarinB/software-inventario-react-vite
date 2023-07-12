@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.29.19",
+    "@tanstack/react-query-devtools": "^4.29.19",
     "axios": "^1.4.0",
     "google-fonts-plugin": "^5.0.2",
     "moment": "^2.29.4",

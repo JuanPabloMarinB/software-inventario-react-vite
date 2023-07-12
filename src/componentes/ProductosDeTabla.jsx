@@ -1,7 +1,6 @@
 import { Suspense, useEffect, useState } from "react";
 import { BiPencil, BiTrash } from "react-icons/bi";
 import { AiFillCheckCircle } from "react-icons/ai";
-import { API, API_DEV, eliminarProducto, obtenerProductos } from "../utils/api";
 import imagenPapa from "../images/Papa.png";
 import imagenZanahoria from "../images/Zanahoria.webp";
 import imagenTomates from "../images/Tomates.png";
@@ -10,52 +9,37 @@ import imagenCilantro from "../images/Cilantro.jpg";
 import imagenCebollaLarga from "../images/Cebolla-larga.png";
 import imagenCebollaCabezona from "../images/Cebolla-cabezona.png";
 import moment from "moment";
-import { fetchData } from "../hooks/useFetch";
+import { useGetProducts, deleteProduct } from "../hooks/useProducts";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 export default function ProductosDeTabla() {
-  const [isDisabled, setIsDisabled] = useState(true);
-  const [data, setData] = useState([]);
+  const queryClient = useQueryClient();
 
-  useEffect(() => {
-    obtenerProductos()
-      .then((data) => {
-        if (Array.isArray(data)) {
-          setData([...data]);
-          console.log("Se ejecutó el useEffect");
-        } else {
-          console.error("Los datos obtenidos no son un array:", data);
-        }
-      })
-      .catch((errorProductos) => {
-        console.error("Error al obtener los productos:", errorProductos);
-      });
-  }, []);
+  const {
+    isLoading: isLoadingProducto,
+    data: productos,
+    isError: isErrorProducto,
+    error: errorProducto,
+  } = useGetProducts();
 
-  const handleDeleteButtonClick = async (id) => {
-    eliminarProducto(id);
+  const deleteProductMutation = useMutation({
+    mutationFn: deleteProduct,
+    onSuccess: () => {
+      queryClient.invalidateQueries("products");
+    },
+  });
+
+  const handleDeleteProduct = (productId) => {
+    deleteProductMutation.mutate(productId);
   };
 
-  const handleEditButtonClick = async (productoId, nuevoNombre) => {
-    try {
-      // Realizar la llamada a la API para guardar el nuevo nombre del producto en la base de datos
-      await API_DEV.put(`/producto/${productoId}`, { nombre: nuevoNombre });
-
-      // Deshabilitar el input después de guardar los datos
-      setIsDisabled(true);
-    } catch (error) {
-      // Manejar el error en caso de que la llamada a la API falle
-      console.error(error);
-    }
-  };
-
-  const cambiarDisabled = () => {
-    setIsDisabled(!isDisabled);
-  };
+  if (isLoadingProducto) return <div>Cargando...</div>;
+  else if (isErrorProducto) return <div>Error: {error.message}</div>;
 
   return (
     <>
-      {data?.map((producto, index) => (
-        <tr key={index}>
+      {productos?.map((producto) => (
+        <tr key={producto.id}>
           <td>
             <a href={"/producto/" + producto.id}>
               {producto.nombre === "Papa" && (
@@ -84,7 +68,6 @@ export default function ProductosDeTabla() {
           <td>
             <input
               type="text"
-              disabled={isDisabled}
               defaultValue={producto.nombre}
               className="input-nombre-producto"
             />
@@ -93,35 +76,19 @@ export default function ProductosDeTabla() {
           <td>$ {producto.precioVenta}</td>
           <td>{producto.cantidadActual}</td>
           <td>
-            {moment(producto.fechaIngreso).format("DD/MM/YYYY HH:mm") + " hrs"}
+            {moment(producto.fechaIngreso).format("DD/MM/YYYY - HH:mm") + " hrs"}
           </td>
           <td>
             <span>{producto.activo ? "✅ Sí" : "🔴 No"}</span>
           </td>
           <td className="acciones-columna">
-            <div>
-              {isDisabled ? (
-                <a onClick={cambiarDisabled} className="btn_edit">
-                  <BiPencil /> Editar
-                </a>
-              ) : (
-                <a
-                  onClick={() =>
-                    handleEditButtonClick(
-                      producto.id,
-                      document.querySelector(
-                        `.input-nombre-producto[data-producto-id="${producto.id}"]`
-                      ).value
-                    )
-                  }
-                  className="btn_save"
-                >
-                  <AiFillCheckCircle /> Guardar
-                </a>
-              )}
-            </div>
+            <button className="btn_edit">
+              <BiPencil /> Editar
+            </button>
             <button
-              onClick={() => handleDeleteButtonClick(producto.id)}
+              onClick={() => {
+                handleDeleteProduct(producto.id);
+              }}
               className="btn_delete"
             >
               <BiTrash /> Borrar

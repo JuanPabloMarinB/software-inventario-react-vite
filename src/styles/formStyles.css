@@ -11,7 +11,6 @@
   margin: auto;
   padding: 20px 0;
   gap: 50px;
-  
 }
 .seccion-der-b {
   display: flex;
@@ -49,10 +48,10 @@
     "nombre nombre nombre nombre codigoBarra codigoBarra"
     "medida medida categoria categoria cantidad cantidad"
     "costoUnidad costoUnidad costoUnidad precioVenta precioVenta precioVenta"
-    "boton  boton  . mensaje mensaje mensaje  ";
+    ". . botonCrear botonCrear . . ";
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 8px #aeaeae;
+  box-shadow: 0px 0px 8px rgb(163, 163, 163);
   padding: 50px;
   margin: 0 50px;
   column-gap: 10px;
@@ -73,7 +72,7 @@
   outline: none;
   font-size: 20px;
   color: #1a1a1a;
-  &&::placeholder{
+  &&::placeholder {
     color: #5e5e5e;
   }
 }
@@ -113,10 +112,13 @@
   flex-direction: column;
   grid-area: precioVenta;
 }
+.boton-container {
+  justify-self: center;
+  grid-area: botonCrear;
+}
 .button {
   width: 200px;
   cursor: pointer;
-  grid-area: boton;
   font-size: 25px;
   padding: 10px;
   border: none;
@@ -156,4 +158,42 @@
 }
 .error-crear-producto {
   color: tomato;
+}
+.producto-creado-mensaje-container {
+  position: absolute;
+  top: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px #bebebe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 8px;
+  z-index: 5;
+  display: none;
+}
+.mensaje-producto-creado-mensaje {
+  color: #1a1a1a;
+}
+.visible {
+  display: flex;
+}
+.boton-aceptar-producto-creado-mensaje {
+  background-color: #9376e0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.form-container.with-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(5px); /* Aplica un desenfoque al contenido detrás */
+  height: 100%;
+  opacity: 1; /* Ajusta la opacidad del contenido detrás */
+  z-index: 4; /* Asegúrate de que esté por debajo del contenedor del mensaje */
 }
