@@ -1,14 +1,23 @@
 import { useState, useEffect, useCallback } from "react";
 import "../styles/facturaStyle.css";
-import { obtenerProductos } from "../api/api";
+import { useQueryClient } from "@tanstack/react-query";
+import { useGetProducts } from "../hooks/useProducts";
 
 export default function BuscarProductoFactura({
   actualizarProductos,
   resultados,
   productosSeleccionados,
 }) {
+  const queryClient = useQueryClient();
+
+  const {
+    isLoading: isLoadingProducto,
+    data: productos,
+    isError: isErrorProducto,
+    error: errorProducto,
+  } = useGetProducts();
   const [query, setQuery] = useState("");
-  const [productos, setProductos] = useState([]);
+
   const [resultadosFiltrados, setResultadosFiltrados] = useState([]);
 
   const filtrarProductos = (query, items) => {
@@ -22,16 +31,6 @@ export default function BuscarProductoFactura({
         !productosSeleccionados.some((p) => p.id === producto.id)
     );
   };
-
-  useEffect(() => {
-    obtenerProductos()
-      .then((data) => {
-        setProductos(data);
-      })
-      .catch((error) => {
-        console.error("Error al obtener los productos:", error);
-      });
-  }, []);
 
   useEffect(() => {
     const productosFiltrados = filtrarProductos(query, productos);

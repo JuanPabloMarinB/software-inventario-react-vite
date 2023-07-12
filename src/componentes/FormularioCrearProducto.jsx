@@ -45,9 +45,9 @@ const FormularioCrearProducto = () => {
 
   if (isLoadingCategoria || isLoadingMedida) {
     return <div>cargando..</div>;
-  } else if (isErrorCategoria) {
-    return <h1>Error: {isErrorCategoria}</h1>;
-  } else if (isErrorMedida) {
+  }
+ 
+  if (isErrorMedida) {
     return <h1>Error: {errorMedida}</h1>;
   }
 
