@@ -2,7 +2,7 @@ import React from "react";
 import { useGetVentas } from "../hooks/useVentas";
 import moment from "moment";
 import { NavLink, useParams } from "react-router-dom";
-import "../styles/TarjetaVentaStyle.css";
+import "../styles/tarjetaVentaStyle.css";
 
 export default function TarjetaVenta({ventas}) {
   const { id } = useParams();
