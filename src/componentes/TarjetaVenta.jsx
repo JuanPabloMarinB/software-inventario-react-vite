@@ -5,7 +5,6 @@ import { NavLink, useParams } from "react-router-dom";
 import "../styles/tarjetaVentaStyle.css";
 
 export default function TarjetaVenta({ventas}) {
-  const { id } = useParams();
 
   return (
     <div className="seccion-der">
