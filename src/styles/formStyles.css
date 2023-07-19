@@ -161,29 +161,46 @@
 }
 .producto-creado-mensaje-container {
   position: absolute;
-  top: 50%;
+  top: 45%;
   background-color: #fff;
   box-shadow: 0 0 10px #bebebe;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  gap: 10px;
+  padding: 25px;
+  gap: 20px;
   border-radius: 8px;
   z-index: 5;
+}
+.visible {
+  display: flex !important;
+  animation: popUpAnimation 0.6s;
+}
+@keyframes popUpAnimation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.not-active {
   display: none;
+  animation: popUpAnimation 0.6s;
 }
 .mensaje-producto-creado-mensaje {
   color: #1a1a1a;
-}
-.visible {
-  display: flex;
+  font-size: 20px;
 }
 .boton-aceptar-producto-creado-mensaje {
   background-color: #9376e0;
   padding: 10px 20px;
   border-radius: 8px;
   color: white;
+  cursor: pointer;
 }
 
 .form-container.with-overlay::after {

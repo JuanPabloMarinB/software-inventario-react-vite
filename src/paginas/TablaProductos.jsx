@@ -5,7 +5,7 @@ const TablaProductos = () => {
   return (
     <section className="seccion-der">
       <div className="head-table-container">
-        <div className="input-search">
+        <div className="input-search-pagina-productos">
           <h1 className="titulo-productos">Productos</h1>
           <input
             type="search"
@@ -18,14 +18,14 @@ const TablaProductos = () => {
         <table>
           <thead className="head-table-ver-productos">
             <tr>
-              <th className="imagen-columna">Imagen</th>
+              <th className="imagen-columna">Categoría</th>
               <th>Nombre de Producto</th>
               <th>Precio de Compra</th>
               <th>Precio de Venta</th>
-              <th>Cantidad</th>
+              <th>Cantidad Actual</th>
               <th>Fecha de Registro</th>
               <th>En Stock</th>
-              <th className="th-acciones-columna">Acciones</th>
+              <th className="th-acciones-columna" colSpan={2}>Acciones</th>
             </tr>
           </thead>
           <tbody>

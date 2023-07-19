@@ -6,12 +6,11 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  padding: 10px 30px 50px;
+  padding: 0px 30px 50px;
 }
 .form-factura-container {
   display: flex;
   background-color: #ffffff;
-  border: thin solid #242424;
   border-radius: 8px;
   margin: 10px;
   padding: 20px 10px;
@@ -28,45 +27,100 @@ td {
   color: #242424;
 }
 .head-form-prod-factura {
-  background-color: #242424;
+  background-color: #9276e0;
   font-size: large;
 }
-.seccion-der-form {
-  display: flex;
-  width: 400px;
-  align-items: center;
-}
 .factura-container {
-  background-color: #242424;
-  border-radius: 10px;
-  padding: 0 30px;
-  color: #fff;
-}
-.total-compra-container {
-  box-shadow: 0px 0px 10px #242424;
   background-color: #fff;
+  box-shadow: 0 0 10px #9276e0;
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 0 30px 50px;
+  color: #fff;
+  height: 70vh;
+  overflow: scroll;
+  &&::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll vertical */
+  }
+  &&::-webkit-scrollbar-track {
+    background-color: #fff; /* Color de fondo del track */
+  }
+  &&::-webkit-scrollbar-thumb {
+    background-color: #9276e0; /* Color del scroll thumb */
+  }
 }
-.head-regitrar-compra {
+.head-registrar-compra {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 10px;
+  color: #242424;
+}
+.seccion-der-form {
+  display: grid;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #242424;
+  padding: 0 20px;
+  height: 100vh;
+}
+.valor-total-compra-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  gap: 20px;
+}
+.input-efectivo {
+  width: 40%;
+  padding: 8px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: end;
+  border-bottom: #1a1a1a solid thin;
+}
+.productos-seleccionados-compra {
+  height: 350px;
+  margin-top: -15px;
+  overflow: scroll;
+  padding: 0 15px;
+  &&::-webkit-scrollbar {
+    width: 10px; /* Ancho del scroll vertical */
+  }
+  &&::-webkit-scrollbar-track {
+    background-color: #fff; /* Color de fondo del track */
+  }
+  &&::-webkit-scrollbar-thumb {
+    background-color: #9276e0; /* Color del scroll thumb */
+  }
+}
+.producto-seleccionado-individual {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 0.7fr;
+  place-content: center;
+  border-bottom: #242424 thin solid;
+  height: 45px;
 }
 .search-producto {
   display: flex;
   gap: 10px;
+  padding: 10px 0;
   align-items: center;
+  color: #242424;
 }
 .input-search-producto {
   font-size: 16px;
   padding: 8px 15px;
   border-radius: 8px;
   outline: none;
-  border: none;
+  border: #9276e0 1.5px solid;
   width: 200px;
   &&::placeholder {
     color: #888888;
+    font-weight: normal;
   }
 }
 
@@ -115,15 +169,31 @@ td {
 }
 .resultados-busqueda {
   position: absolute;
+  border-radius: 8px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+  border: #1a1a1a thin solid;
+  &&::-webkit-scrollbar {
+    width: 10px; /* Ancho del scroll vertical */
+  }
+  &&::-webkit-scrollbar-thumb {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #9276e0; /* Color del scroll thumb */
+  }
 }
+
 .li-resultados-productos {
   display: flex;
   z-index: 10;
   width: 210px;
+  padding: 10px;
   color: #242424;
-  padding: 6px 10px;
   justify-content: center;
   background-color: rgb(255, 255, 255);
+  border-bottom: #9276e0 thin solid;
   &&:hover {
     background-color: #242424;
     color: #fff;
@@ -132,14 +202,14 @@ td {
 .disminuir-cantidad-form-factura,
 .aumentar-cantidad-form-factura {
   cursor: pointer;
-  font-size: 25px;
-  background-color: #eee;
-  padding: 0px 8px;
+  font-size: 20px;
+  background-color: #9276e0b3;
+  padding: 0px 4px;
   width: 20px;
   border-radius: 5px;
-  &&:hover{
-    background-color: #242424;
-    color: #fff;
+  color: #fff;
+  &&:hover {
+    background-color: #9276e0;
   }
 }
 .eliminar-producto-form-factura {
@@ -148,5 +218,117 @@ td {
   cursor: pointer;
   &&:hover {
     opacity: 0.7;
+  }
+}
+.detalles-compra-valores{
+  color: #9276e0;
+}
+
+.confirmar-compra-container {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 0px 10px #242424;
+  background-color: #fff;
+  border-radius: 8px;
+  display: none;
+  z-index: 5;
+  margin-right: 20px;
+}
+
+.botones-confirmar-compra-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.boton-confirmar-compra,
+.boton-cancelar-confirmar-compra {
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #9276e0;
+  color: #fff;
+  &&.boton-cancelar-confirmar-compra {
+    background-color: tomato;
+  }
+  &&:hover {
+    opacity: 0.8;
+  }
+}
+.boton-abrir-mensaje-compartir-compra {
+  background-color: #9276e0;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  &&:hover {
+    opacity: 0.8;
+  }
+  &&:checked {
+    transform: translateX(10px);
+  }
+}
+.visible {
+  display: flex !important;
+  animation: popUpAnimation 0.6s;
+}
+@keyframes popUpAnimation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.seccion-der-form.with-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(2px); /* Aplica un desenfoque al contenido detrás */
+  height: 100%;
+  opacity: 1; /* Ajusta la opacidad del contenido detrás */
+  z-index: 4; /* Asegúrate de que esté por debajo del contenedor del mensaje */
+}
+.not-active {
+  display: none;
+}
+.disabled {
+  background-color: tomato;
+  pointer-events: none;
+}
+.venta-realizada-exito {
+  position: absolute;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 8px #242424;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 9;
+  display: none;
+  top: 40%;
+  left: 40%;
+  && a {
+    background-color: #9276e0;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    &&:hover {
+      opacity: 0.9;
+    }
   }
 }

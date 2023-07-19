@@ -1,0 +1,1816 @@
+[
+    {
+      "totalAPagar": 0,
+      "id": 1,
+      "ventaFactura": "619654",
+      "fechaVenta": "2023-07-13T06:04:29.000Z",
+      "efectivo": 150000,
+      "cambio": 150000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 0,
+      "id": 2,
+      "ventaFactura": "464248",
+      "fechaVenta": "2023-07-13T06:07:29.000Z",
+      "efectivo": 150000,
+      "cambio": 150000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 60000,
+      "id": 3,
+      "ventaFactura": "480246",
+      "fechaVenta": "2023-07-13T06:08:25.000Z",
+      "efectivo": 150000,
+      "cambio": 90000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 28500,
+      "id": 4,
+      "ventaFactura": "330769",
+      "fechaVenta": "2023-07-13T06:31:02.000Z",
+      "efectivo": 40000,
+      "cambio": 11500,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 30500,
+      "id": 5,
+      "ventaFactura": "980428",
+      "fechaVenta": "2023-07-13T06:31:28.000Z",
+      "efectivo": 40000,
+      "cambio": 9500,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 6,
+      "ventaFactura": "592732",
+      "fechaVenta": "2023-07-13T11:59:55.000Z",
+      "efectivo": 0,
+      "cambio": -16221,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 7,
+      "ventaFactura": "476770",
+      "fechaVenta": "2023-07-13T13:01:03.000Z",
+      "efectivo": 0,
+      "cambio": -16221,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 0,
+      "id": 8,
+      "ventaFactura": "807234",
+      "fechaVenta": "2023-07-13T13:01:59.000Z",
+      "efectivo": 0,
+      "cambio": 0,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 9,
+      "ventaFactura": "405455",
+      "fechaVenta": "2023-07-13T13:07:35.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 10,
+      "ventaFactura": "227387",
+      "fechaVenta": "2023-07-13T13:08:12.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 11,
+      "ventaFactura": "456060",
+      "fechaVenta": "2023-07-13T13:08:14.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 12,
+      "ventaFactura": "398360",
+      "fechaVenta": "2023-07-13T13:08:42.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 13,
+      "ventaFactura": "142010",
+      "fechaVenta": "2023-07-13T13:08:59.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 14,
+      "ventaFactura": "933512",
+      "fechaVenta": "2023-07-13T13:09:54.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 15,
+      "ventaFactura": "816096",
+      "fechaVenta": "2023-07-13T13:10:11.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 16,
+      "ventaFactura": "472859",
+      "fechaVenta": "2023-07-13T13:10:57.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 17,
+      "ventaFactura": "276884",
+      "fechaVenta": "2023-07-13T13:13:47.000Z",
+      "efectivo": 20000,
+      "cambio": 3779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 13900,
+      "id": 18,
+      "ventaFactura": "668980",
+      "fechaVenta": "2023-07-13T14:11:09.000Z",
+      "efectivo": 14000,
+      "cambio": 100,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 24821,
+      "id": 19,
+      "ventaFactura": "433188",
+      "fechaVenta": "2023-07-13T14:49:47.000Z",
+      "efectivo": 30000,
+      "cambio": 5179,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 20,
+      "ventaFactura": "744666",
+      "fechaVenta": "2023-07-13T14:51:54.000Z",
+      "efectivo": 16221,
+      "cambio": 0,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 48000,
+      "id": 21,
+      "ventaFactura": "405776",
+      "fechaVenta": "2023-07-13T17:08:12.000Z",
+      "efectivo": 90000,
+      "cambio": 42000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2200,
+      "id": 22,
+      "ventaFactura": "982288",
+      "fechaVenta": "2023-07-13T17:40:51.000Z",
+      "efectivo": 3000,
+      "cambio": 800,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2200,
+      "id": 23,
+      "ventaFactura": "672518",
+      "fechaVenta": "2023-07-13T17:41:35.000Z",
+      "efectivo": 10000,
+      "cambio": 7800,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2200,
+      "id": 24,
+      "ventaFactura": "664044",
+      "fechaVenta": "2023-07-13T17:59:10.000Z",
+      "efectivo": 2200,
+      "cambio": 0,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 14021,
+      "id": 25,
+      "ventaFactura": "585367",
+      "fechaVenta": "2023-07-13T18:00:58.000Z",
+      "efectivo": 20000,
+      "cambio": 5979,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2200,
+      "id": 26,
+      "ventaFactura": "923932",
+      "fechaVenta": "2023-07-13T18:01:35.000Z",
+      "efectivo": 10000,
+      "cambio": 7800,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16221,
+      "id": 27,
+      "ventaFactura": "428063",
+      "fechaVenta": "2023-07-13T21:02:24.000Z",
+      "efectivo": 50000,
+      "cambio": 33779,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 6400,
+      "id": 28,
+      "ventaFactura": "441191",
+      "fechaVenta": "2023-07-13T21:54:20.000Z",
+      "efectivo": 10000,
+      "cambio": 3600,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 13200,
+      "id": 29,
+      "ventaFactura": "370641",
+      "fechaVenta": "2023-07-13T22:19:14.000Z",
+      "efectivo": 30000,
+      "cambio": 16800,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 6721,
+      "id": 30,
+      "ventaFactura": "818783",
+      "fechaVenta": "2023-07-13T22:22:47.000Z",
+      "efectivo": 20000,
+      "cambio": 13279,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 16100,
+      "id": 31,
+      "ventaFactura": "529641",
+      "fechaVenta": "2023-07-13T22:25:24.000Z",
+      "efectivo": 50000,
+      "cambio": 33900,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 30000,
+      "id": 32,
+      "ventaFactura": "132298",
+      "fechaVenta": "2023-07-13T22:29:47.000Z",
+      "efectivo": 150000,
+      "cambio": 120000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 10000,
+      "id": 33,
+      "ventaFactura": "515749",
+      "fechaVenta": "2023-07-13T22:30:37.000Z",
+      "efectivo": 150000,
+      "cambio": 140000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 10000,
+      "id": 34,
+      "ventaFactura": "459196",
+      "fechaVenta": "2023-07-13T22:30:43.000Z",
+      "efectivo": 150000,
+      "cambio": 140000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 6400,
+      "id": 35,
+      "ventaFactura": "323468",
+      "fechaVenta": "2023-07-13T23:42:28.000Z",
+      "efectivo": 10000,
+      "cambio": 3600,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 10000,
+      "id": 36,
+      "ventaFactura": "922791",
+      "fechaVenta": "2023-07-14T00:08:17.000Z",
+      "efectivo": 150000,
+      "cambio": 140000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 8500,
+      "id": 37,
+      "ventaFactura": "669483",
+      "fechaVenta": "2023-07-14T05:18:22.000Z",
+      "efectivo": 20000,
+      "cambio": 11500,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 17000,
+      "id": 38,
+      "ventaFactura": "114460",
+      "fechaVenta": "2023-07-14T05:19:54.000Z",
+      "efectivo": 50000,
+      "cambio": 33000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 47000,
+      "id": 39,
+      "ventaFactura": "434002",
+      "fechaVenta": "2023-07-14T06:35:03.000Z",
+      "efectivo": 100000,
+      "cambio": 53000,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 8521,
+      "id": 40,
+      "ventaFactura": "805859",
+      "fechaVenta": "2023-07-14T07:15:31.000Z",
+      "efectivo": 50000,
+      "cambio": 41479,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2800,
+      "id": 41,
+      "ventaFactura": "287018",
+      "fechaVenta": "2023-07-14T07:22:31.000Z",
+      "efectivo": 12000,
+      "cambio": 9200,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2800,
+      "id": 42,
+      "ventaFactura": "431905",
+      "fechaVenta": "2023-07-14T07:23:12.000Z",
+      "efectivo": 5000,
+      "cambio": 2200,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 0,
+      "id": 44,
+      "ventaFactura": "936487",
+      "fechaVenta": "2023-07-14T07:23:49.000Z",
+      "efectivo": 0,
+      "cambio": 0,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2800,
+      "id": 46,
+      "ventaFactura": "545556",
+      "fechaVenta": "2023-07-14T07:24:29.000Z",
+      "efectivo": 3000,
+      "cambio": 200,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 2800,
+      "id": 47,
+      "ventaFactura": "219476",
+      "fechaVenta": "2023-07-14T07:24:48.000Z",
+      "efectivo": 10000,
+      "cambio": 7200,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 3210,
+      "id": 48,
+      "ventaFactura": "606999",
+      "fechaVenta": "2023-07-14T21:31:57.000Z",
+      "efectivo": 150000,
+      "cambio": 146790,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 3210,
+      "id": 49,
+      "ventaFactura": "509674",
+      "fechaVenta": "2023-07-14T21:32:15.000Z",
+      "efectivo": 150000,
+      "cambio": 146790,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 18600,
+      "id": 50,
+      "ventaFactura": "412015",
+      "fechaVenta": "2023-07-15T04:17:19.000Z",
+      "efectivo": 300000,
+      "cambio": 281400,
+      "gananciaXventa": 6900,
+      "ventasProductos": [
+        {
+          "id": 1,
+          "ventaId": 50,
+          "productoId": 253,
+          "cantidadVenta": 2,
+          "producto": {
+            "id": 253,
+            "codigoBarra": "6548964631668",
+            "nombre": "Zanahoria",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:35:12.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 84,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 2,
+          "ventaId": 50,
+          "productoId": 251,
+          "cantidadVenta": 3,
+          "producto": {
+            "id": 251,
+            "codigoBarra": "8949461894984",
+            "nombre": "Leche ",
+            "medida": "UNIDAD",
+            "costoXunidad": 1500,
+            "precioVenta": 2800,
+            "fechaIngreso": "2023-07-14T05:27:24.000Z",
+            "cantidadIngresada": 50,
+            "cantidadActual": 27,
+            "avisoReposicion": false,
+            "categoria": "LACTEOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 3,
+          "ventaId": 50,
+          "productoId": 252,
+          "cantidadVenta": 4,
+          "producto": {
+            "id": 252,
+            "codigoBarra": "123456",
+            "nombre": "Cilantro",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:28:47.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 92,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 8900,
+      "id": 51,
+      "ventaFactura": "796921",
+      "fechaVenta": "2023-07-15T04:23:17.000Z",
+      "efectivo": 10000,
+      "cambio": 1100,
+      "gananciaXventa": 3550,
+      "ventasProductos": [
+        {
+          "id": 4,
+          "ventaId": 51,
+          "productoId": 251,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 251,
+            "codigoBarra": "8949461894984",
+            "nombre": "Leche ",
+            "medida": "UNIDAD",
+            "costoXunidad": 1500,
+            "precioVenta": 2800,
+            "fechaIngreso": "2023-07-14T05:27:24.000Z",
+            "cantidadIngresada": 50,
+            "cantidadActual": 27,
+            "avisoReposicion": false,
+            "categoria": "LACTEOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 5,
+          "ventaId": 51,
+          "productoId": 254,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 254,
+            "codigoBarra": "321654",
+            "nombre": "Cebolla Cabezona",
+            "medida": "PESO (KG)",
+            "costoXunidad": 1450,
+            "precioVenta": 2700,
+            "fechaIngreso": "2023-07-14T22:46:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 95,
+            "avisoReposicion": false,
+            "categoria": "HORTALIZAS",
+            "activo": true
+          }
+        },
+        {
+          "id": 6,
+          "ventaId": 51,
+          "productoId": 253,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 253,
+            "codigoBarra": "6548964631668",
+            "nombre": "Zanahoria",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:35:12.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 84,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 7,
+          "ventaId": 51,
+          "productoId": 252,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 252,
+            "codigoBarra": "123456",
+            "nombre": "Cilantro",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:28:47.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 92,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 22400,
+      "id": 52,
+      "ventaFactura": "142747",
+      "fechaVenta": "2023-07-15T04:25:46.000Z",
+      "efectivo": 30000,
+      "cambio": 7600,
+      "gananciaXventa": 8950,
+      "ventasProductos": [
+        {
+          "id": 8,
+          "ventaId": 52,
+          "productoId": 254,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 254,
+            "codigoBarra": "321654",
+            "nombre": "Cebolla Cabezona",
+            "medida": "PESO (KG)",
+            "costoXunidad": 1450,
+            "precioVenta": 2700,
+            "fechaIngreso": "2023-07-14T22:46:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 95,
+            "avisoReposicion": false,
+            "categoria": "HORTALIZAS",
+            "activo": true
+          }
+        },
+        {
+          "id": 9,
+          "ventaId": 52,
+          "productoId": 253,
+          "cantidadVenta": 2,
+          "producto": {
+            "id": 253,
+            "codigoBarra": "6548964631668",
+            "nombre": "Zanahoria",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:35:12.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 84,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 10,
+          "ventaId": 52,
+          "productoId": 252,
+          "cantidadVenta": 3,
+          "producto": {
+            "id": 252,
+            "codigoBarra": "123456",
+            "nombre": "Cilantro",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:28:47.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 92,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 11,
+          "ventaId": 52,
+          "productoId": 251,
+          "cantidadVenta": 4,
+          "producto": {
+            "id": 251,
+            "codigoBarra": "8949461894984",
+            "nombre": "Leche ",
+            "medida": "UNIDAD",
+            "costoXunidad": 1500,
+            "precioVenta": 2800,
+            "fechaIngreso": "2023-07-14T05:27:24.000Z",
+            "cantidadIngresada": 50,
+            "cantidadActual": 27,
+            "avisoReposicion": false,
+            "categoria": "LACTEOS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 13500,
+      "id": 53,
+      "ventaFactura": "853977",
+      "fechaVenta": "2023-07-15T19:39:39.000Z",
+      "efectivo": 20000,
+      "cambio": 6500,
+      "gananciaXventa": 5400,
+      "ventasProductos": [
+        {
+          "id": 12,
+          "ventaId": 53,
+          "productoId": 253,
+          "cantidadVenta": 3,
+          "producto": {
+            "id": 253,
+            "codigoBarra": "6548964631668",
+            "nombre": "Zanahoria",
+            "medida": "UNIDAD",
+            "costoXunidad": 1200,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-14T22:35:12.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 84,
+            "avisoReposicion": false,
+            "categoria": "CONDIMENTOS",
+            "activo": true
+          }
+        },
+        {
+          "id": 13,
+          "ventaId": 53,
+          "productoId": 251,
+          "cantidadVenta": 3,
+          "producto": {
+            "id": 251,
+            "codigoBarra": "8949461894984",
+            "nombre": "Leche ",
+            "medida": "UNIDAD",
+            "costoXunidad": 1500,
+            "precioVenta": 2800,
+            "fechaIngreso": "2023-07-14T05:27:24.000Z",
+            "cantidadIngresada": 50,
+            "cantidadActual": 27,
+            "avisoReposicion": false,
+            "categoria": "LACTEOS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 6380,
+      "id": 54,
+      "ventaFactura": "282340",
+      "fechaVenta": "2023-07-15T19:56:40.000Z",
+      "efectivo": 10000,
+      "cambio": 3620,
+      "gananciaXventa": 2910,
+      "ventasProductos": [
+        {
+          "id": 14,
+          "ventaId": 54,
+          "productoId": 259,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 259,
+            "codigoBarra": "7804601443999",
+            "nombre": "Harina de Maíz",
+            "medida": "PESO (KG)",
+            "costoXunidad": 830,
+            "precioVenta": 1990,
+            "fechaIngreso": "2023-07-15T19:49:00.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 88,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 15,
+          "ventaId": 54,
+          "productoId": 260,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 16,
+          "ventaId": 54,
+          "productoId": 258,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 258,
+            "codigoBarra": "400006951014",
+            "nombre": "Salsa de Tomate 200grs",
+            "medida": "UNIDAD",
+            "costoXunidad": 340,
+            "precioVenta": 520,
+            "fechaIngreso": "2023-07-15T19:48:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 47,
+            "avisoReposicion": false,
+            "categoria": "SALSAS",
+            "activo": true
+          }
+        },
+        {
+          "id": 17,
+          "ventaId": 54,
+          "productoId": 257,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 257,
+            "codigoBarra": "400006967992",
+            "nombre": "Mantequilla de Maní",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 2100,
+            "fechaIngreso": "2023-07-15T19:47:50.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 78,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 18,
+          "ventaId": 54,
+          "productoId": 256,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 256,
+            "codigoBarra": "7804608221347",
+            "nombre": "Arroz",
+            "medida": "UNIDAD",
+            "costoXunidad": 520,
+            "precioVenta": 780,
+            "fechaIngreso": "2023-07-15T19:47:09.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 9080,
+      "id": 55,
+      "ventaFactura": "293279",
+      "fechaVenta": "2023-07-17T23:39:54.000Z",
+      "efectivo": 20000,
+      "cambio": 10920,
+      "gananciaXventa": 3460,
+      "ventasProductos": [
+        {
+          "id": 19,
+          "ventaId": 55,
+          "productoId": 261,
+          "cantidadVenta": 2,
+          "producto": {
+            "id": 261,
+            "codigoBarra": "6549871326540",
+            "nombre": "Zanahoria Baby",
+            "medida": "UNIDAD",
+            "costoXunidad": 1750,
+            "precioVenta": 2400,
+            "fechaIngreso": "2023-07-17T18:22:34.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        },
+        {
+          "id": 20,
+          "ventaId": 55,
+          "productoId": 260,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 21,
+          "ventaId": 55,
+          "productoId": 259,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 259,
+            "codigoBarra": "7804601443999",
+            "nombre": "Harina de Maíz",
+            "medida": "PESO (KG)",
+            "costoXunidad": 830,
+            "precioVenta": 1990,
+            "fechaIngreso": "2023-07-15T19:49:00.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 88,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 22,
+          "ventaId": 55,
+          "productoId": 258,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 258,
+            "codigoBarra": "400006951014",
+            "nombre": "Salsa de Tomate 200grs",
+            "medida": "UNIDAD",
+            "costoXunidad": 340,
+            "precioVenta": 520,
+            "fechaIngreso": "2023-07-15T19:48:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 47,
+            "avisoReposicion": false,
+            "categoria": "SALSAS",
+            "activo": true
+          }
+        },
+        {
+          "id": 23,
+          "ventaId": 55,
+          "productoId": 256,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 256,
+            "codigoBarra": "7804608221347",
+            "nombre": "Arroz",
+            "medida": "UNIDAD",
+            "costoXunidad": 520,
+            "precioVenta": 780,
+            "fechaIngreso": "2023-07-15T19:47:09.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 4390,
+      "id": 56,
+      "ventaFactura": "552630",
+      "fechaVenta": "2023-07-17T23:41:12.000Z",
+      "efectivo": 10000,
+      "cambio": 5610,
+      "gananciaXventa": 1750,
+      "ventasProductos": [
+        {
+          "id": 24,
+          "ventaId": 56,
+          "productoId": 260,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 25,
+          "ventaId": 56,
+          "productoId": 258,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 258,
+            "codigoBarra": "400006951014",
+            "nombre": "Salsa de Tomate 200grs",
+            "medida": "UNIDAD",
+            "costoXunidad": 340,
+            "precioVenta": 520,
+            "fechaIngreso": "2023-07-15T19:48:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 47,
+            "avisoReposicion": false,
+            "categoria": "SALSAS",
+            "activo": true
+          }
+        },
+        {
+          "id": 26,
+          "ventaId": 56,
+          "productoId": 257,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 257,
+            "codigoBarra": "400006967992",
+            "nombre": "Mantequilla de Maní",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 2100,
+            "fechaIngreso": "2023-07-15T19:47:50.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 78,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 27,
+          "ventaId": 56,
+          "productoId": 256,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 256,
+            "codigoBarra": "7804608221347",
+            "nombre": "Arroz",
+            "medida": "UNIDAD",
+            "costoXunidad": 520,
+            "precioVenta": 780,
+            "fechaIngreso": "2023-07-15T19:47:09.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 1770,
+      "id": 57,
+      "ventaFactura": "755508",
+      "fechaVenta": "2023-07-17T23:43:33.000Z",
+      "efectivo": 20000,
+      "cambio": 18230,
+      "gananciaXventa": 820,
+      "ventasProductos": [
+        {
+          "id": 28,
+          "ventaId": 57,
+          "productoId": 260,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 29,
+          "ventaId": 57,
+          "productoId": 256,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 256,
+            "codigoBarra": "7804608221347",
+            "nombre": "Arroz",
+            "medida": "UNIDAD",
+            "costoXunidad": 520,
+            "precioVenta": 780,
+            "fechaIngreso": "2023-07-15T19:47:09.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 239290,
+      "id": 58,
+      "ventaFactura": "884227",
+      "fechaVenta": "2023-07-17T23:46:09.000Z",
+      "efectivo": 300000,
+      "cambio": 60710,
+      "gananciaXventa": 65610,
+      "ventasProductos": [
+        {
+          "id": 30,
+          "ventaId": 58,
+          "productoId": 261,
+          "cantidadVenta": 98,
+          "producto": {
+            "id": 261,
+            "codigoBarra": "6549871326540",
+            "nombre": "Zanahoria Baby",
+            "medida": "UNIDAD",
+            "costoXunidad": 1750,
+            "precioVenta": 2400,
+            "fechaIngreso": "2023-07-17T18:22:34.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        },
+        {
+          "id": 31,
+          "ventaId": 58,
+          "productoId": 259,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 259,
+            "codigoBarra": "7804601443999",
+            "nombre": "Harina de Maíz",
+            "medida": "PESO (KG)",
+            "costoXunidad": 830,
+            "precioVenta": 1990,
+            "fechaIngreso": "2023-07-15T19:49:00.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 88,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 32,
+          "ventaId": 58,
+          "productoId": 257,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 257,
+            "codigoBarra": "400006967992",
+            "nombre": "Mantequilla de Maní",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 2100,
+            "fechaIngreso": "2023-07-15T19:47:50.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 78,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 5590,
+      "id": 59,
+      "ventaFactura": "159912",
+      "fechaVenta": "2023-07-17T23:49:45.000Z",
+      "efectivo": 10000,
+      "cambio": 4410,
+      "gananciaXventa": 2710,
+      "ventasProductos": [
+        {
+          "id": 33,
+          "ventaId": 59,
+          "productoId": 259,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 259,
+            "codigoBarra": "7804601443999",
+            "nombre": "Harina de Maíz",
+            "medida": "PESO (KG)",
+            "costoXunidad": 830,
+            "precioVenta": 1990,
+            "fechaIngreso": "2023-07-15T19:49:00.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 88,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 34,
+          "ventaId": 59,
+          "productoId": 257,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 257,
+            "codigoBarra": "400006967992",
+            "nombre": "Mantequilla de Maní",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 2100,
+            "fechaIngreso": "2023-07-15T19:47:50.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 78,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 35,
+          "ventaId": 59,
+          "productoId": 255,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 255,
+            "codigoBarra": "6515648916",
+            "nombre": "Cebolla Larga",
+            "medida": "PESO (KG)",
+            "costoXunidad": 700,
+            "precioVenta": 1500,
+            "fechaIngreso": "2023-07-15T19:42:06.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 91,
+            "avisoReposicion": false,
+            "categoria": "VERDURAS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 5200,
+      "id": 60,
+      "ventaFactura": "802857",
+      "fechaVenta": "2023-07-17T23:53:33.000Z",
+      "efectivo": 6000,
+      "cambio": 800,
+      "gananciaXventa": 1800,
+      "ventasProductos": [
+        {
+          "id": 36,
+          "ventaId": 60,
+          "productoId": 258,
+          "cantidadVenta": 10,
+          "producto": {
+            "id": 258,
+            "codigoBarra": "400006951014",
+            "nombre": "Salsa de Tomate 200grs",
+            "medida": "UNIDAD",
+            "costoXunidad": 340,
+            "precioVenta": 520,
+            "fechaIngreso": "2023-07-15T19:48:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 47,
+            "avisoReposicion": false,
+            "categoria": "SALSAS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 990,
+      "id": 61,
+      "ventaFactura": "523566",
+      "fechaVenta": "2023-07-17T23:55:42.000Z",
+      "efectivo": 5000,
+      "cambio": 4010,
+      "gananciaXventa": 560,
+      "ventasProductos": [
+        {
+          "id": 37,
+          "ventaId": 61,
+          "productoId": 260,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 38,
+          "ventaId": 61,
+          "productoId": 261,
+          "cantidadVenta": 0,
+          "producto": {
+            "id": 261,
+            "codigoBarra": "6549871326540",
+            "nombre": "Zanahoria Baby",
+            "medida": "UNIDAD",
+            "costoXunidad": 1750,
+            "precioVenta": 2400,
+            "fechaIngreso": "2023-07-17T18:22:34.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 6470,
+      "id": 62,
+      "ventaFactura": "881294",
+      "fechaVenta": "2023-07-17T23:56:05.000Z",
+      "efectivo": 10234,
+      "cambio": 3764,
+      "gananciaXventa": 3580,
+      "ventasProductos": [
+        {
+          "id": 39,
+          "ventaId": 62,
+          "productoId": 261,
+          "cantidadVenta": 0,
+          "producto": {
+            "id": 261,
+            "codigoBarra": "6549871326540",
+            "nombre": "Zanahoria Baby",
+            "medida": "UNIDAD",
+            "costoXunidad": 1750,
+            "precioVenta": 2400,
+            "fechaIngreso": "2023-07-17T18:22:34.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        },
+        {
+          "id": 40,
+          "ventaId": 62,
+          "productoId": 260,
+          "cantidadVenta": 4,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 41,
+          "ventaId": 62,
+          "productoId": 259,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 259,
+            "codigoBarra": "7804601443999",
+            "nombre": "Harina de Maíz",
+            "medida": "PESO (KG)",
+            "costoXunidad": 830,
+            "precioVenta": 1990,
+            "fechaIngreso": "2023-07-15T19:49:00.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 88,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 42,
+          "ventaId": 62,
+          "productoId": 258,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 258,
+            "codigoBarra": "400006951014",
+            "nombre": "Salsa de Tomate 200grs",
+            "medida": "UNIDAD",
+            "costoXunidad": 340,
+            "precioVenta": 520,
+            "fechaIngreso": "2023-07-15T19:48:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 47,
+            "avisoReposicion": false,
+            "categoria": "SALSAS",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 41290,
+      "id": 63,
+      "ventaFactura": "570026",
+      "fechaVenta": "2023-07-17T23:59:50.000Z",
+      "efectivo": 50555,
+      "cambio": 9265,
+      "gananciaXventa": 16960,
+      "ventasProductos": [
+        {
+          "id": 43,
+          "ventaId": 63,
+          "productoId": 260,
+          "cantidadVenta": 11,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 44,
+          "ventaId": 63,
+          "productoId": 258,
+          "cantidadVenta": 10,
+          "producto": {
+            "id": 258,
+            "codigoBarra": "400006951014",
+            "nombre": "Salsa de Tomate 200grs",
+            "medida": "UNIDAD",
+            "costoXunidad": 340,
+            "precioVenta": 520,
+            "fechaIngreso": "2023-07-15T19:48:23.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 47,
+            "avisoReposicion": false,
+            "categoria": "SALSAS",
+            "activo": true
+          }
+        },
+        {
+          "id": 45,
+          "ventaId": 63,
+          "productoId": 257,
+          "cantidadVenta": 12,
+          "producto": {
+            "id": 257,
+            "codigoBarra": "400006967992",
+            "nombre": "Mantequilla de Maní",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 2100,
+            "fechaIngreso": "2023-07-15T19:47:50.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 78,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        },
+        {
+          "id": 46,
+          "ventaId": 63,
+          "productoId": 256,
+          "cantidadVenta": 0,
+          "producto": {
+            "id": 256,
+            "codigoBarra": "7804608221347",
+            "nombre": "Arroz",
+            "medida": "UNIDAD",
+            "costoXunidad": 520,
+            "precioVenta": 780,
+            "fechaIngreso": "2023-07-15T19:47:09.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 0,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 0,
+      "id": 64,
+      "ventaFactura": "717772",
+      "fechaVenta": "2023-07-18T00:01:28.000Z",
+      "efectivo": 20400,
+      "cambio": 20400,
+      "gananciaXventa": 0,
+      "ventasProductos": [
+        
+      ]
+    },
+    {
+      "totalAPagar": 990,
+      "id": 65,
+      "ventaFactura": "662940",
+      "fechaVenta": "2023-07-18T00:03:03.000Z",
+      "efectivo": 3333,
+      "cambio": 2343,
+      "gananciaXventa": 560,
+      "ventasProductos": [
+        {
+          "id": 47,
+          "ventaId": 65,
+          "productoId": 260,
+          "cantidadVenta": 1,
+          "producto": {
+            "id": 260,
+            "codigoBarra": "7809559200342",
+            "nombre": "Harina de Trigo",
+            "medida": "PESO (KG)",
+            "costoXunidad": 430,
+            "precioVenta": 990,
+            "fechaIngreso": "2023-07-15T19:49:36.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 54,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 9380,
+      "id": 66,
+      "ventaFactura": "777958",
+      "fechaVenta": "2023-07-18T00:33:04.000Z",
+      "efectivo": 11111,
+      "cambio": 1731,
+      "gananciaXventa": 3670,
+      "ventasProductos": [
+        {
+          "id": 48,
+          "ventaId": 66,
+          "productoId": 262,
+          "cantidadVenta": 3,
+          "producto": {
+            "id": 262,
+            "codigoBarra": "9999888777",
+            "nombre": "Arroz Integral",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 1800,
+            "fechaIngreso": "2023-07-18T00:04:11.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 87,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        },
+        {
+          "id": 49,
+          "ventaId": 66,
+          "productoId": 259,
+          "cantidadVenta": 2,
+          "producto": {
+            "id": 259,
+            "codigoBarra": "7804601443999",
+            "nombre": "Harina de Maíz",
+            "medida": "PESO (KG)",
+            "costoXunidad": 830,
+            "precioVenta": 1990,
+            "fechaIngreso": "2023-07-15T19:49:00.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 88,
+            "avisoReposicion": false,
+            "categoria": "ABARROTES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 60000,
+      "id": 67,
+      "ventaFactura": "312209",
+      "fechaVenta": "2023-07-18T00:35:52.000Z",
+      "efectivo": 100000,
+      "cambio": 40000,
+      "gananciaXventa": 27750,
+      "ventasProductos": [
+        {
+          "id": 50,
+          "ventaId": 67,
+          "productoId": 263,
+          "cantidadVenta": 30,
+          "producto": {
+            "id": 263,
+            "codigoBarra": "789654321015",
+            "nombre": "Tomates",
+            "medida": "UNIDAD",
+            "costoXunidad": 850,
+            "precioVenta": 1700,
+            "fechaIngreso": "2023-07-18T00:34:25.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 70,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        },
+        {
+          "id": 51,
+          "ventaId": 67,
+          "productoId": 262,
+          "cantidadVenta": 5,
+          "producto": {
+            "id": 262,
+            "codigoBarra": "9999888777",
+            "nombre": "Arroz Integral",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 1800,
+            "fechaIngreso": "2023-07-18T00:04:11.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 87,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        }
+      ]
+    },
+    {
+      "totalAPagar": 9000,
+      "id": 68,
+      "ventaFactura": "988336",
+      "fechaVenta": "2023-07-18T05:41:40.000Z",
+      "efectivo": 9000,
+      "cambio": 0,
+      "gananciaXventa": 2250,
+      "ventasProductos": [
+        {
+          "id": 52,
+          "ventaId": 68,
+          "productoId": 262,
+          "cantidadVenta": 5,
+          "producto": {
+            "id": 262,
+            "codigoBarra": "9999888777",
+            "nombre": "Arroz Integral",
+            "medida": "UNIDAD",
+            "costoXunidad": 1350,
+            "precioVenta": 1800,
+            "fechaIngreso": "2023-07-18T00:04:11.000Z",
+            "cantidadIngresada": 100,
+            "cantidadActual": 87,
+            "avisoReposicion": false,
+            "categoria": "LEGUMBRES",
+            "activo": true
+          }
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,87 @@
+.titulo-venta {
+  margin: 10px 0;
+}
+.seccion-der-tarjeta-venta {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+  overflow: scroll;
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0 0 4px #c2c2c2;
+  border-radius: 8px;
+  padding: 10px;
+  &&::-webkit-scrollbar {
+    width: 10px; /* Ancho del scroll vertical */
+  }
+  &&::-webkit-scrollbar-track {
+    background-color: #fff; /* Color de fondo del track */
+  }
+  &&::-webkit-scrollbar-thumb {
+    background-color: #9276e0; /* Color del scroll thumb */
+  }
+}
+
+.card-venta-container {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  box-shadow: 0 0 6px #2f05a1;
+  background-color: #fff;
+  color: #242424;
+  margin: 10px;
+  padding: 0 20px;
+  max-width: 320px;
+  text-decoration: none;
+  && p {
+      font-size: 15px;
+    }
+    
+    &&:hover {
+      opacity: 0.8;
+  }
+}
+.head-card-venta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  && h4 {
+    margin: 0;
+    color: #9276e0;
+  }
+  && p {
+    margin: 0;
+  }
+}
+.detalles-venta-individual {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  && p {
+      margin: 0;
+      font-size: 18px;
+    }
+}
+.total-pagar-venta {
+    display: flex;
+    flex-direction: column;
+    && p {
+        margin: 0;
+    }
+}
+.titulo-total-pagar {
+    text-align: left;
+    color: #9276e0;
+}
+.efectivo-total-pagar {
+    display: flex;
+    column-gap: 10px;
+}
+.cambio-total-pagar {
+  display: flex;
+  column-gap: 10px;
+}

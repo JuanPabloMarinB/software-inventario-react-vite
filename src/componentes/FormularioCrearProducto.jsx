@@ -3,14 +3,51 @@ import { createProduct } from "../hooks/useProducts";
 import { useGetMedida, useGetCategoria } from "../hooks/useEnums";
 import { useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import Select from "react-select";
 
 const FormularioCrearProducto = () => {
   const [selectedMedida, setSelectedMedida] = useState("");
   const [selectedCategoria, setSelectedCategoria] = useState("");
   const [mensajeVisible, setMensajeVisible] = useState(false);
 
+  const customStyles = {
+    control: (provided) => ({
+      ...provided,
+      padding: "3.5px",
+      borderColor: "#9276e0",
+      borderRadius: "5px",
+      boxShadow: "none",
+      outline: "none",
+      "&:hover": {
+        borderColor: "#9276e0",
+      },
+    }),
+    option: (provided, state) => ({
+      ...provided,
+      backgroundColor: state.isSelected
+        ? "#9276e0"
+        : state.isFocused
+        ? "#9276e087"
+        : "#fff",
+      color: state.isSelected ? "#fff" : state.isFocused ? "#fff" : "#1a1a1a",
+      // Agrega otros estilos personalizados según tus necesidades
+    }),
+  };
+
   const handleClickAceptar = () => {
     setMensajeVisible(false);
+  };
+  const handleMedidaSelectChange = ({ value }) => {
+    setSelectedMedida(value);
+  };
+  const handleCategoriaSelectChange = ({ value }) => {
+    setSelectedCategoria(value);
+  };
+  const handleAnimationEnd = () => {
+    if (!mensajeVisible) {
+      setMensajeVisible(true);
+      setMensajeVisible(false);
+    }
   };
 
   const queryClient = useQueryClient();
@@ -23,13 +60,13 @@ const FormularioCrearProducto = () => {
 
   const {
     isLoading: isLoadingMedida,
-    data: medida,
+    data: medidas,
     isError: isErrorMedida,
     error: errorMedida,
   } = useGetMedida();
   const {
     isLoading: isLoadingCategoria,
-    data: categoria,
+    data: categorias,
     isError: isErrorCategoria,
     error: errorCategoria,
   } = useGetCategoria();
@@ -46,7 +83,7 @@ const FormularioCrearProducto = () => {
   if (isLoadingCategoria || isLoadingMedida) {
     return <div>cargando..</div>;
   }
- 
+
   if (isErrorMedida) {
     return <h1>Error: {errorMedida}</h1>;
   }
@@ -79,41 +116,40 @@ const FormularioCrearProducto = () => {
             name="codigoBarra"
           />
         </label>
-        <label className="input-label medida" htmlFor="medida">
-          Medida
-          <select
-            value={selectedMedida}
-            required
-            className="select-box"
-            name="medida"
-            onChange={(e) => setSelectedMedida(e.target.value)}
-          >
-            {medida?.map((medidaValue, index) => (
-              <option key={index} value={medidaValue} className="opcion-input">
-                {medidaValue}
-              </option>
-            ))}
-          </select>
-        </label>
 
-        <label className="input-label categoria" htmlFor="categoria">
+        <label htmlFor="medida" className="input-label medida">
+          Medida
+          <Select
+            noOptionsMessage={() => "No encontrado"}
+            className="select-medida"
+            defaultValue={{
+              label: medidas[0],
+              value: medidas[0],
+            }}
+            styles={customStyles}
+            options={medidas.map((medida) => ({
+              label: medida,
+              value: medida,
+            }))}
+            onChange={handleMedidaSelectChange}
+          />
+        </label>
+        <label htmlFor="categoria" className="input-label categoria">
           Categoría
-          <select
-            value={selectedCategoria}
-            className="select-box"
-            name="categoria"
-            onChange={(e) => setSelectedCategoria(e.target.value)}
-          >
-            {categoria?.map((categoriaValue, index) => (
-              <option
-                key={index}
-                value={categoriaValue}
-                className="opcion-input"
-              >
-                {categoriaValue}
-              </option>
-            ))}
-          </select>
+          <Select
+            noOptionsMessage={() => "No encontrado"}
+            className="select-categoria"
+            defaultValue={{
+              label: categorias[0],
+              value: categorias[0],
+            }}
+            options={categorias.map((categoria) => ({
+              label: categoria,
+              value: categoria,
+            }))}
+            styles={customStyles}
+            onChange={handleCategoriaSelectChange}
+          />
         </label>
 
         <label className="input-label cantidad" htmlFor="cantidadIngresada">
@@ -157,7 +193,8 @@ const FormularioCrearProducto = () => {
       <div
         className={`producto-creado-mensaje-container ${
           mensajeVisible ? "visible" : ""
-        }`}
+        } ${!mensajeVisible ? "not-active" : ""}`}
+        onAnimationEnd={handleAnimationEnd}
       >
         <div className="mensaje-producto-creado-mensaje">
           Producto Creado Con Éxito
